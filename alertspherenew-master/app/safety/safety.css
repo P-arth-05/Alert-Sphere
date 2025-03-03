@@ -1,0 +1,96 @@
+/* General styles */
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #d9d9d9;
+    color: #333;
+  }
+  
+  .body > header {
+    background-color: #27343b;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; /* Space between the title and button */
+    align-items: center; /* Vertically center the content */
+    padding: 20px;
+    position: relative;
+    animation: drop-down 1s ease-out;
+  }
+  
+  .body>h1 {
+    margin: 0;
+  }
+  
+  .heading2{
+    font-size: 1.5em;
+    font-style: bold;
+    margin: 10px 0;
+  }
+  #readAloudBtn {
+    font-size: 12px; /* Make the button smaller */
+    padding: 5px 10px; /* Smaller padding */
+    background-color: #ffffff;
+    color: #27343b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #readAloudBtn:hover {
+    background-color: #c1c1c1;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fade-in 1s ease-in 1s forwards;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .precautions-list {
+    list-style-type: disc;
+    padding: 26px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 0;
+    width: 95%;
+    text-align: left; /* Align text to the left inside the list */
+  }
+  
+  .precautions-list li {
+    margin-bottom: 10px;
+  }
+  
+  .precautions-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Animations */
+  @keyframes drop-down {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
